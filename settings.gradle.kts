@@ -8,3 +8,5 @@
  */
 
 rootProject.name = "disc-intersections"
+
+include("disco")
