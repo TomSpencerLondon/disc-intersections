@@ -14,11 +14,15 @@ public class DiscIntersectionsTest {
 
     @Test
     public void should_return_minus_1_for_null_array() {
-        assertEquals(-1, discIntersections.calculate(new int[]{}));
+        assertEquals(-1, discIntersections.calculate(createDiscs()));
     }
 
     @Test
     public void should_return_0_for_one_disc() {
-        assertEquals(0, discIntersections.calculate(new int[]{10}));
+        assertEquals(0, discIntersections.calculate(createDiscs(10)));
+    }
+
+    private int[] createDiscs(int... radiusMeltdown){
+        return radiusMeltdown;
     }
 }
